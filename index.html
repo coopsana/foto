@@ -7,20 +7,31 @@
     <title>websocket</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </head>
 
 <body>
-    <div class="video-wrap">
-        <video id="video" playsinline autoplay></video>
+    <div class="row center-align">
+        <div class="col l5 m12 s12 center-align blue">
+            <div class="video-wrap">
+                <video id="video" playsinline autoplay></video>
+            </div>
+        </div>
+        <div class="col l2 m12 s12 center-align ">
+            <div style="height: 200px;display: flex;justify-content: center;align-items: center;" class="">
+                <buttton class="btn grey" id="snap">capturar foto</buttton>
+            </div>
+        </div>
+        <div class="col l5 m12 s12 center-align green">
+            <div class="video-wrap">
+                <canvas id="canvas" width="150" height="200"></canvas>
+            </div>
+        </div>
     </div>
 
-    <div class="controller">
-        <buttton id="snap">Capture</buttton>
-    </div>
 
-    <canvas id="canvas" width="640" height="480">
-
-    </canvas>
 </body>
 
 <script src="script.js"></script>

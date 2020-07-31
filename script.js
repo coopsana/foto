@@ -50,10 +50,10 @@ snap.addEventListener("click", function() {
     const context = canvas.getContext('2d')
     context.drawImage(video, 0, 0, 150, 200)
     console.log(canvas.toDataURL())
-    stopVideoOnly(window.stream)
-    setTimeout(() => {
-        init()
-    }, 1000);
+    // stopVideoOnly(window.stream)
+    // setTimeout(() => {
+    //     init()
+    // }, 1000);
 })
 
 function stopVideoOnly(stream) {
