@@ -1,20 +1,3 @@
-// const adminSocket = io('http://aplicaciones.coopsana.com.co:8674/', { transports: ['websocket'] })
-
-// adminSocket.on('servidor', (data) => {
-//     $("#contenedor_textos").append(`<li><b>Texto:</b> ${data.texto}</li>`)
-// })
-
-// function enviar() {
-//     let texto = document.getElementById('texto')
-//     console.log(texto.value)
-//     adminSocket.emit('mensaje', {
-//         'mensaje': 'saludo desde un servidor externo',
-//         'texto': texto.value
-//     })
-// }
-
-// 'use strict'
-
 var IMAGEN = ''
 var STREAM
 const video = document.getElementById('video')
@@ -50,10 +33,6 @@ snap.addEventListener("click", function() {
     const context = canvas.getContext('2d')
     context.drawImage(video, 0, 0, 150, 200)
     console.log(canvas.toDataURL())
-    // stopVideoOnly(window.stream)
-    // setTimeout(() => {
-    //     init()
-    // }, 1000);
 })
 
 function stopVideoOnly(stream) {
